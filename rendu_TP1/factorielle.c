@@ -12,8 +12,9 @@ TypeEntier factorielle(TypeEntier n) {
 }
 
 int main(void) {
-    TypeEntier n = 6;
-    TypeEntier resultat = factorielle(n);
-    printf("La factorielle de %d est : %d\n", n, resultat);
+    TypeEntier i;
+for (i=1;i<16;i++){
+    TypeEntier resultat = factorielle(i);
+    printf("La factorielle de %d est : %d\n", i, resultat);}
     return 0;
 }
