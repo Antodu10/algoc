@@ -1,18 +1,11 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-void echangeContenu(int *a, int *b){
+void echangeContenu(int* a, int* b){
 int temp = *a;
 *a=*b;
 *b=temp;
 }
-
-
-
-
-
-
-
 
 
 int main (void){
