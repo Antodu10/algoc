@@ -37,3 +37,4 @@ Matrice*  creer(int16_t valeur, int16_t nbLig, int16_t nbCol){
 int main(void){
  
     return 0;}
+
