@@ -16,16 +16,32 @@
 #include <errno.h>
 #include <assert.h>
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// MAIN
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-int main(int argc, char** argv)
-{
+typedef struct{
+	int annee;
+	char * nom;
+	char * nature;
+}Winner;
+
+
+int numberOfWinners(FILE * fichier){
+	char character;
+	int counter;
+	counter =0;
+	while((character=fgetc(fichier))!=EOF){
+		if(character=='\n'){
+			counter=counter+1;}
+		}
+		fclose(fichier);
+		return counter;
+}
+
+int main(void)
+{ 
 	char filename[] = "turingWinners.csv";
-	char outputFilename[] = "out.csv";
-
+	FILE* f = fopen(filename,"r");
     // TODO
+	printf("La valeur de l'entier est : %d\n", numberOfWinners(f));
 
 	return EXIT_SUCCESS;
 }
