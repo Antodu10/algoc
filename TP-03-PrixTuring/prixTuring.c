@@ -101,7 +101,12 @@ Winner ** tableau_winner (FILE* f){
 Winner ** readWinners(FILE * f){
 	return tableau_winner(f);
 	}
-	
+void printWinners(FILE* file1, FILE* file2, Winner** tab_winners){
+	for(int i=0; i<numberOfWinners(file1); i++){
+		fprintf(
+			file2,"%d;%s;%s\n", tab_winners[i]->annee,tab_winners[i]->nom,tab_winners[i]->nature);
+	}
+}
 
 
 int main(void)
