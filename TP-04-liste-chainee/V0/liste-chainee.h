@@ -8,7 +8,7 @@ struct cellule_s {
 	Element val;
 	struct cellule_s* suiv;
 };
-
+//adresse nul = NULL
 typedef struct cellule_s Cellule;
 
 typedef Cellule* Liste;

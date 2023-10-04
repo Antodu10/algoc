@@ -21,63 +21,64 @@ int main(void){
 	l = ajoutTete(4,l);
 	l = ajoutTete(1,l);
 
-	afficheListe_i(l);
+	//afficheListe_i(l);
 
-	ajoutFin_r(99,l);
-	afficheListe_i(l);
+	 ajoutFin_i(99,l);
+	// afficheListe_i(l);
 
-	ajoutFin_r(100,l);
-	afficheListe_i(l);
-
-	p = cherche_i(200,l);
-	printf("cherche_i(200) : %s\n",estVide(p)?"pas trouve":"[ERREUR] trouve !!!");
+	 ajoutFin_i(100,l);
+	 afficheListe_r(l);
 
 	p = cherche_i(99,l);
-	if(estVide(p))
-		printf("cherche_i(99) : [ERREUR] pas trouve \n");
-	else {
-		printf("cherche_i(99) : trouve ");
-		afficheElement(p->val);
-		printf("\n");
-	}
+	afficheListe_i(p);
+	//printf("cherche_i(200) : %s\n",estVide(p)?"pas trouve":"[ERREUR] trouve !!!");
 
-	p = cherche_r(200,l);
-	printf("cherche_r(200) : %s\n",estVide(p)?"pas trouve":"[ERREUR] trouve !!!");
+	// p = cherche_i(99,l);//i pour en itératif
+	// if(estVide(p))
+	// 	printf("cherche_i(99) : [ERREUR] pas trouve \n");
+	// else {
+	// 	printf("cherche_i(99) : trouve ");
+	// 	afficheElement(p->val);
+	// 	printf("\n");
+	// }
 
-	p = cherche_r(99,l);
-	if(estVide(p))
-		printf("cherche_r(99) : [ERREUR] pas trouve \n");
-	else {
-		printf("cherche_r(99) : trouve ");
-		afficheElement(p->val);
-		printf("\n");
-	}
+	// p = cherche_r(200,l);// r pour en récursif
+	// printf("cherche_r(200) : %s\n",estVide(p)?"pas trouve":"[ERREUR] trouve !!!");
 
-	printf("retirePremier_i(1)   : ");
-	l = retirePremier_i(1,l);
-	afficheListe_r(l);
+	// p = cherche_r(99,l);
+	// if(estVide(p))
+	// 	printf("cherche_r(99) : [ERREUR] pas trouve \n");
+	// else {
+	// 	printf("cherche_r(99) : trouve ");
+	// 	afficheElement(p->val);
+	// 	printf("\n");
+	// }
 
-	printf("retirePremier_i(1)   : ");
-	l = retirePremier_i(1,l);
-	afficheListe_r(l);
+	// printf("retirePremier_i(1)   : ");
+	// l = retirePremier_i(1,l);
+	// afficheListe_r(l);
 
-	printf("retirePremier_i(100) : ");
-	l = retirePremier_i(100,l);
-	afficheListe_r(l);
+	// printf("retirePremier_i(1)   : ");
+	// l = retirePremier_i(1,l);
+	// afficheListe_r(l);
 
-	printf("retirePremier_r(4)   : ");
-	l = retirePremier_r(4,l);
-	afficheListe_r(l);
+	// printf("retirePremier_i(100) : ");
+	// l = retirePremier_i(100,l);
+	// afficheListe_r(l);
 
-	printf("retirePremier_r(4)   : ");
-	l = retirePremier_r(4,l);
-	afficheListe_r(l);
+	// printf("retirePremier_r(4)   : ");
+	// l = retirePremier_r(4,l);
+	// afficheListe_r(l);
 
-	printf("retirePremier_r(99)  : ");
-	l = retirePremier_r(99,l);
-	afficheListe_r(l);
+	// printf("retirePremier_r(4)   : ");
+	// l = retirePremier_r(4,l);
+	// afficheListe_r(l);
 
-	detruire_r(l);
+	// printf("retirePremier_r(99)  : ");
+	// l = retirePremier_r(99,l);
+	// afficheListe_r(l);
+
+	 //detruire_i(l);
 
 	return EXIT_SUCCESS;
 }
